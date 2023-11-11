@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Professional Portfolio</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .navbar { overflow: hidden; background-color: #333; }
+        .navbar a { float: left; display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
+        .navbar a:hover { background-color: #ddd; color: black; }
+        .section { padding: 20px; }
+        .headshot { width: 150px; height: 150px; border-radius: 50%; }
+        .project-thumbnail { width: 100px; height: 100px; }
+        .contact-form { max-width: 300px; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin: 10px 0; }
+        .blog-post { border: 1px solid #ddd; padding: 10px; margin-bottom: 20px; }
+        .achievement { display: flex; align-items: center; margin-bottom: 10px; }
+        .achievement img { width: 50px; height: 50px; margin-right: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#about">About Me</a>
+        <a href="#past-projects">Past Projects</a>
+        <a href="#current-projects">Current Projects</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#blog">Blog</a>
+        <a href="#awards">Scholarships, Awards, and Press</a>
+    </div>
+
+    <div class="section" id="about">
+        <h2>About Me</h2>
+        <img src="headshot.jpg" class="headshot" alt="Headshot">
+        <p>[Brief Bio]</p>
+    </div>
+
+    <div class="section" id="past-projects">
+        <h2>Past Projects</h2>
+        <!-- Repeat for each project -->
+        <div>
+            <img src="project1.jpg" class="project-thumbnail" alt="Project Thumbnail">
+            <p>[Project Description]</p>
+        </div>
+    </div>
+
+    <div class="section" id="current-projects">
+        <h2>Current Projects</h2>
+        <!-- Repeat for each project -->
+        <div>
+            <img src="project2.jpg" class="project-thumbnail" alt="Project Thumbnail">
+            <p>[Project Description]</p>
+        </div>
+    </div>
+
+    <div class="section" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div class="section" id="blog">
+        <h2>Blog</h2>
+        <!-- Repeat for each blog post -->
+        <div class="blog-post">
+            <h3>[Blog Post Title]</h3>
+            <p>[Blog Post Excerpt]</p>
+        </div>
+    </div>
+
+    <div class="section" id="awards">
+        <h2>Scholarships, Awards, and Press</h2>
+        <!-- Repeat for each achievement -->
+        <div class="achievement">
+            <img src="award1.jpg" alt="Award Logo">
+            <p>[Award Description]</p>
+        </div>
+    </div>
+
+</body>
+</html>
